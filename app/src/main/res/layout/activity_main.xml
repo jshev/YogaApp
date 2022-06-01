@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_blue"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:layout_width="225dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="EXPLORE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />-->
+
+    <!--<TextView
+        android:layout_width="225dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Our Favorites"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text=" -"
+            android:textSize="17sp"
+            android:backgroundTint="@color/dark_blue">
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+        <!--<Button
+            android:id="@+id/floatingButtonLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=" -"
+            android:backgroundTint="@color/dark_blue">
+        </Button>-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_margin="15dp"
+            android:minHeight="50dp"
+            android:inputType="textPersonName"
+            android:hint="Search..." />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text=" +"
+            android:textSize="17sp"
+            android:backgroundTint="@color/dark_blue">
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="1"
+        tools:listitem="@layout/yoga_list_item">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="ASSIGN ON CREATE"
+        android:layout_margin="15dp">
+    </TextView>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/floatingButtonLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=" -"
+            android:backgroundTint="@color/dark_blue">
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+        &lt;!&ndash;<Button
+            android:id="@+id/floatingButtonLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=" -"
+            android:backgroundTint="@color/dark_blue">
+        </Button>&ndash;&gt;
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/floatingButtonRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=" +"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/dark_blue">
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+    </LinearLayout>-->
+
+</LinearLayout>
